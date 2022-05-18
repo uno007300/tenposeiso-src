@@ -1,0 +1,5 @@
+<nav id="navbar-mobile" class="navbar-mobile order-last order-lg-0">
+  <ul>
+    <li *ngFor="let navi of topNavis"><a class="nav-link scrollto" [class.active]="navi.isActive ? 'active' : ''" [href]="navi.path">{{navi.title}}</a></li>
+  </ul>
+</nav><!-- .navbar -->

@@ -1,0 +1,49 @@
+
+  <!-- ======= Menu Section ======= -->
+  <section id="menu" class="menu section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>※価格については、お問い合わせにて、ご相談ください。</h2>
+        <p>料金表</p>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-house">ハウスクリーニング</li>
+            <li data-filter=".filter-aircon">家庭用エアコンクリーニング</li>
+            <li data-filter=".filter-store">店舗クリーニング</li>
+            <li data-filter=".filter-floor">床清掃</li>
+            <li data-filter=".filter-window">ガラス清掃</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div *ngFor="let menu of menus" class="col-lg-6 menu-item filter-{{menu.category}}">
+          <div class="menu-img">
+            <i class="{{menu.img}}"></i>
+          </div>
+          
+          <div class="menu-content">
+            <a href="#">{{menu.title}}</a><span>{{menu.minutes}}</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container aos-init aos-animate price-warn price-alert">
+      <p>※当社は作業員の人数、予想作業時間、使用機材などで清掃料金を算出します。</p>
+      <p>※汚れの程度、作業のやり易さなどで料金が増減します。</p>
+      <p>※見積金額以外に追加料金は一切発生しませんのでご安心ください。</p>
+      <p>※記載されてない項目もご相談ください。</p>
+    </div>
+  </section><!-- End Menu Section -->
+
+  
+

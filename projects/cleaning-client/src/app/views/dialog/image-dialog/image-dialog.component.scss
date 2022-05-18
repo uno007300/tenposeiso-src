@@ -1,0 +1,15 @@
+.image-box{
+  position: relative;
+  .cancel-icon{
+    position: absolute;
+    top:0px;
+    right:0px;
+  }
+  img{
+    max-width: 800px;
+    max-height: 800px;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    object-fit: cover;
+  }
+}

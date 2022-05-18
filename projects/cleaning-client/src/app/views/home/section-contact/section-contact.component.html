@@ -1,0 +1,98 @@
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>お問い合わせ</h2>
+      <p>「掃除の悩み」なんでもお気軽に問い合わせください。</p>
+    </div>
+  </div>
+
+  <!-- <div data-aos="fade-up">
+    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+  </div> -->
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="row mt-2">
+      <div class="col-lg-8">
+
+        <form [formGroup]="thisForm" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" formControlName="name" placeholder="お名前/店舗名/会社名" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" formControlName="email" placeholder="メールアドレス" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="tel" id="tel" formControlName="tel" placeholder="電話番号" required>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="address" id="address" formControlName="address" placeholder="ご住所" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="content" rows="8" formControlName="content" placeholder="内容" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">お問い合わせ、ありがとうございます。</div>
+          </div>
+          <div class="submin-btn">
+            <div class="btn-container">
+              <div class="center">
+                <button class="btn" type="button" (click)="onSubmit()">
+                  <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                  </svg>
+                  <span>送信</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="text-center"><button  type="submit" ></button></div> -->
+        </form>
+
+      </div>
+
+      <div class="col-lg-4 mt-2 mt-lg-0">
+        <div class="info">
+
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>所在地:</h4>
+            <p>{{address}}</p>
+          </div>
+
+          <div class="open-hours">
+            <i class="bi bi-clock"></i>
+            <h4>営業時間:</h4>
+            <p>
+            {{time}}
+            </p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>メール:</h4>
+            <p>{{email}}</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>連絡先:</h4>
+            <p><a [href]="'tel:' + phone">{{phone}}</a></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->

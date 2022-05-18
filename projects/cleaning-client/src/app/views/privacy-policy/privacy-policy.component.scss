@@ -1,0 +1,21 @@
+
+
+.chapter {
+  list-style: none;
+  counter-reset: count 0;
+}
+
+.chapter>li::before{
+  content: "第 " counter(count) "章  ";
+  counter-increment: count 1;
+}
+
+.article {
+  list-style: none;
+  counter-reset: count 0;
+}
+
+.article>li::before{
+  content: "第 " counter(count) "条  ";
+  counter-increment: count 1;
+}

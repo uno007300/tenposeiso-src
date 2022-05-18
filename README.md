@@ -26,4 +26,44 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-ng new cleaning-workspace --createApplication="false"
+-- ng new cleaning-workspace --createApplication="false"
+- cd cleaning-workspace
+- ng generate application cleaning-client
+
+
+-- npm install bootstrap
+-- ng add @angular/material
+
+-- ng serve --open --project "cleaning-client" --configuration development
+
+
+
+-- 오탈자 검토        -- 왕상훈사장님
+-- 화면 이미지 변경   -- 왕상훈사장님
+-- 도메인등록         -- 후보설정 / 사장님 결정
+-- 회사메일등록 ??    -- 하시게 되면 월 천엔정도
+-- 모바일 메뉴 대응
+-- 구글 분석등록       -- 유입분석
+-- 구글 검색등록
+-- 구글 애드샌스 등록  -- 광고
+-- 프리다이얼
+-- 메일주소 등록
+-- 호스팅업체등록
+
+
+-- 当サイトについて
+-- 個人情報保護
+-- SNS 등록?
+
+
+-- 호스팅 년간 お支払合計 13,200円 (xserver) - done.
+-- SSL 무료 (xserver 제공) - done.
+-- 도메인 년간 1000엔 ~ 2000엔 (xserver)
+-- 메일주소 년간 2000엔 ~ 6000엔 (zoho)
+
+-- 사이트 제작 10만엔 ( 11 만엔 ) - 상민
+-- 관리비 월 3만엔  ( 3만 3천엔 ) - 상민
+
+-- メンテナンスNo1
+
+-- 문의사항을 웹으로 받는 부분 (상민 기존서버로 담당) 화면에서 주문하면 사장님 메일로 직접 통보

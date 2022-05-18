@@ -1,0 +1,44 @@
+<!-- ======= Service Section ======= -->
+<section id="specials" class="specials">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>サービス</h2>
+      <p>清掃はプロにお任せください。</p>
+    </div>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li *ngFor="let service of services" class="nav-item">
+            <a class="nav-link" [class.active]="selectedServiceId === service.id ? 'active show' : ''" data-bs-toggle="tab" [href]="service.path">{{service.title}}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+          <div class="tab-pane" *ngFor="let service of services" [class.active]="selectedServiceId === service.id ? 'active show' : ''" [id]="service.id">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <div class="detail-item" *ngFor="let detail of service.serviceDetails">
+                  <h3>{{detail.title}}</h3>
+                  <p class="fst-italic">
+                    {{detail.desc}}
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <div>Before</div>
+                <img appLazyLoad [src]="service.beforeImg" (click)="openImage(service.beforeImg)" loading="lazy" alt="店舗清掃" class="img-fluid before-after">
+                <div>After</div>
+                <img appLazyLoad [src]="service.afterImg" (click)="openImage(service.afterImg)" loading="lazy" alt="店舗清掃" class="img-fluid before-after">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Specials Section -->
