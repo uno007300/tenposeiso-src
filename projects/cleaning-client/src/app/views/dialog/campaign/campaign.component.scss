@@ -1,0 +1,35 @@
+.campaign-section{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  .campaign-box  {
+    height: 200px;
+    position: relative;
+    .campaign{
+      position: absolute;
+      /* top: -21px; */
+      right: 66px;
+      border-radius: 50px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px #fff;
+      color: red;
+      padding: 20px 12px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      transform: rotate(-8deg);
+      .campaign-round{
+        height: 200px;
+        margin-top: -14px;
+        margin-left: -5px;
+      }
+    }
+  }
+  a{
+    width: 100%;
+  }
+}
+
+::ng-deep .mat-dialog-container{
+  background-color: gold !important;
+}

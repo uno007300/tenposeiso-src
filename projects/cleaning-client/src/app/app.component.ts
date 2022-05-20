@@ -7,6 +7,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { GaService } from './service/ga.service';
 import { filter } from 'rxjs';
 import { LoadingService } from './service/loading.service';
+import { CampaignComponent } from './views/dialog/campaign/campaign.component';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,7 @@ export class AppComponent implements OnInit {
     private router: Router,
     private gaService: GaService,
     private media: MediaMatcher,
-    
+    private dialog: MatDialog,
     private changeDetectorRef: ChangeDetectorRef,
   ) { 
     this.mobileQuery = media.matchMedia('(max-width: 1000px)');
@@ -42,11 +43,20 @@ export class AppComponent implements OnInit {
       this.gaService.sendPageView(params.url);
     });
 
-    
+    this.openDialog();
   }
 
   ngOnDestroy(): void {
     this.mobileQuery.removeEventListener('change', this._mobileQueryListener);
   }
   
+  openDialog(){
+    const dialogRef = this.dialog.open(CampaignComponent, {
+      width: '95%',
+      maxWidth: '400px'
+    });
+    dialogRef.afterClosed().subscribe(result => {
+     
+    });
+  }
 }

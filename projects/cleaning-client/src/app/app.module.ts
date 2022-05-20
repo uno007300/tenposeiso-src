@@ -48,6 +48,7 @@ import { CommonModule } from '@angular/common';
 import { SectionGoContactComponent } from './views/home/section-go-contact/section-go-contact.component';
 import { SectionAreaComponent } from './views/home/section-area/section-area.component';
 import { SectionFaqComponent } from './views/home/section-faq/section-faq.component';
+import { CampaignComponent } from './views/dialog/campaign/campaign.component';
 
 export const APP_ROUTES = [
   { path: '', component: HomeComponent, data : { animation : { value :'home'} } },
@@ -94,6 +95,7 @@ const routerOptions: ExtraOptions = {
     SectionGoContactComponent,
     SectionAreaComponent,
     SectionFaqComponent,
+    CampaignComponent,
     
   ],
   imports: [

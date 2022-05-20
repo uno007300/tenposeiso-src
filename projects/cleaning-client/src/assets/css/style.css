@@ -683,6 +683,7 @@ section {
   line-height: 40px;
   font-weight: 700;
   color: #cda45e;
+  z-index: 999;
 }
 
 /*--------------------------------------------------------------
@@ -750,7 +751,7 @@ section {
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -775,7 +776,7 @@ section {
   top: 20px;
   width: 60px;
   height: 60px;
-  z-index: 1;
+  z-index: 9;
   content: '';
   border-left: 5px solid #cda45e;
   border-top: 5px solid #cda45e;
@@ -807,6 +808,10 @@ section {
 .about .about-img:hover::after {
   right: 10px;
   bottom: 10px;
+}
+
+.about .content {
+  z-index: 99;
 }
 
 .about .content h3 {
@@ -947,7 +952,7 @@ section {
 }
 
 .why-us .box h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
@@ -1219,6 +1224,10 @@ section {
   bottom: 0;
 }
 
+.about .section-title h2 {
+  color: #fff;
+}
+
 .setprice .section-title h2 {
   color: #fff;
 }
@@ -1244,18 +1253,22 @@ section {
 
 .setprice .event-item h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 23px;
   color: #cda45e;
 }
 
 .setprice .event-item .price {
   font-size: 26px;
-  font-weight: 700;
   margin-bottom: 15px;
 }
 
 .setprice .event-item .price span {
   border-bottom: 2px solid #cda45e;
+}
+
+.setprice .event-item .price span.strong {
+  border-bottom: 2px solid #cda45e;
+  font-weight: 700;
 }
 
 .setprice .event-item ul {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { menus } from '../../../menu';
+import { menus, priceCategories, PriceCategory, prices } from '../../../menu';
 
 @Component({
   selector: 'app-section-price',
@@ -9,9 +9,15 @@ import { menus } from '../../../menu';
 export class SectionPriceComponent implements OnInit {
 
   menus = menus;
+  priceCategories = priceCategories;
+  prices = prices;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getPrice(priceCategory: PriceCategory){
+    return prices.filter(f => f.category == priceCategory.category);
   }
 
 }

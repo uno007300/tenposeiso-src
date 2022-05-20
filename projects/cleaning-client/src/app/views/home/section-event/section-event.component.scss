@@ -1,5 +1,32 @@
 .event-item{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.event-item .content  {
+  position: relative;
+  
+  margin-top: 30px;
+  .campaign{
+    position: absolute;
+    top: -21px;
+    right: 47px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #fff;
+    color: red;
+    padding: 20px 12px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    transform: rotate(-20deg);
+    .campaign-round{
+      width: 200px;
+      height: 200px;
+      margin-top: 18px;
+      margin-left: -31px;
+    }
+  }
   li{
     display: inline-block;
     margin:10px 10px 10px 0;
@@ -8,4 +35,13 @@
 .event-img{
   border-radius: 10px;
   border: orange 6px solid;
+}
+
+.sale{
+  text-decoration: line-through;
+}
+
+.strong{
+  font-weight: 800;
+
 }

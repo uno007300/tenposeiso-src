@@ -53,16 +53,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 -- 当サイトについて- done.
 -- 個人情報保護- done.
--- SNS 등록?
-
 
 -- 호스팅 년간 お支払合計 13,200円 (xserver) - done.
 -- SSL 무료 (xserver 제공) - done.
 -- 도메인 년간 1000엔 ~ 2000엔 (xserver)- done.
 -- 메일주소 년간 2000엔 ~ 6000엔 (zoho)- done.
+-- 광고 월  4,5000엔 google ad words. -done.
+-- 실 경비 총 합계 
 
 -- 사이트 제작 10만엔 ( 11 만엔 ) - 상민- done.
 -- 관리비 월 3만엔  ( 3만 3천엔 ) - 상민- done.
+
 
 -- メンテナンスNo1- done.
 
