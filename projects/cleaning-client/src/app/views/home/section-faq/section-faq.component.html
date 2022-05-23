@@ -10,7 +10,7 @@
             <div class="content px-xl-5">
               <h3>よくある質問</h3>
               <p>
-                店舗清掃・厨房清掃についてよくある質問です。
+                <strong>店舗清掃・厨房清掃</strong>についてよくある質問です。
               </p>
             </div>
 
@@ -24,9 +24,7 @@
                   </button>
                 </h3>
                 <div [id]="faq.id" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    {{faq.desc}}
-                  </div>
+                  <div class="accordion-body" [innerHTML]="faq.desc"></div>
                 </div>
               </div><!-- # Faq item-->
 

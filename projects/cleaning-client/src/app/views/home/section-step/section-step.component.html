@@ -13,8 +13,8 @@
             <div class="timeline-icon"><span class="year">{{step.id}}</span></div>
             <div class="timeline-content">
                 <h3 class="title">{{step.title}}</h3>
-                <p class="description">
-              {{step.desc}}
+                <p class="description" [innerHtml]="step.desc">
+              
                 </p>
             </div>
         </div>

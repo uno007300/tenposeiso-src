@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'projects/cleaning-client/src/environments/environment';
 
 @Component({
   selector: 'app-section-about',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-about.component.scss']
 })
 export class SectionAboutComponent implements OnInit {
-
+  siteName = environment.siteName;
   constructor() { }
 
   ngOnInit(): void {

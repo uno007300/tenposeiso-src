@@ -4,7 +4,7 @@
 
     <div class="section-title">
       <h2>サービス</h2>
-      <p>清掃はプロにお任せください。</p>
+      <p><strong>清掃</strong>はプロにお任せください。</p>
     </div>
 
     <div class="row" >
@@ -23,16 +23,15 @@
               <div class="col-lg-8 details order-2 order-lg-1">
                 <div class="detail-item" *ngFor="let detail of service.serviceDetails">
                   <h3>{{detail.title}}</h3>
-                  <p class="fst-italic">
-                    {{detail.desc}}
+                  <p class="fst-italic" [innerHtml]="detail.desc">
                   </p>
                 </div>
               </div>
               <div class="col-lg-4 text-center order-1 order-lg-2">
                 <div>Before</div>
-                <img appLazyLoad [src]="service.beforeImg" (click)="openImage(service.beforeImg)" loading="lazy" alt="店舗清掃" class="img-fluid before-after">
+                <img appLazyLoad [src]="service.beforeImg" (click)="openImage(service.beforeImg)" loading="lazy" alt="店舗清掃,厨房清掃" class="img-fluid before-after">
                 <div>After</div>
-                <img appLazyLoad [src]="service.afterImg" (click)="openImage(service.afterImg)" loading="lazy" alt="店舗清掃" class="img-fluid before-after">
+                <img appLazyLoad [src]="service.afterImg" (click)="openImage(service.afterImg)" loading="lazy" alt="店舗清掃,厨房清掃" class="img-fluid before-after">
               </div>
             </div>
           </div>

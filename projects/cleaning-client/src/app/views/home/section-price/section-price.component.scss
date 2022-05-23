@@ -28,6 +28,9 @@
   color: #212529;
   vertical-align: top;
   border-color: #dee2e6;
+  .currency, .unit{
+    width: 72px;
+  }
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -213,3 +216,4 @@
     -webkit-overflow-scrolling: touch;
   }
 }
+

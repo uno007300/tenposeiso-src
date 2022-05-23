@@ -1,4 +1,5 @@
 .campaign-section{
+  padding: 30px 0 0 0;
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -8,7 +9,7 @@
     .campaign{
       position: absolute;
       /* top: -21px; */
-      right: 66px;
+      right: 47px;
       border-radius: 50px;
       background-color: #fff;
       box-shadow: 0px 0px 10px #fff;
@@ -20,12 +21,15 @@
       transform: rotate(-8deg);
       .campaign-round{
         height: 200px;
-        margin-top: -14px;
-        margin-left: -5px;
+        margin-top: 3px;
+        margin-left: 6px;
       }
     }
   }
   a{
+    margin-bottom: 10px;
+  }
+  .d-button{
     width: 100%;
   }
 }

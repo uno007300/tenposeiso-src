@@ -14,7 +14,7 @@
             <div class="swiper-slide">
               <div class="row event-item" *ngFor="let event of events">
                 <div class="col-lg-6">
-                  <img appLazyLoad [src]="event.img" class="img-fluid event-img" loading="lazy" alt="店舗清掃">
+                  <img appLazyLoad [src]="event.img" class="img-fluid event-img" loading="lazy" alt="店舗清掃,厨房清掃">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content" >
                   <div *ngIf="event.isCampaign" class="campaign">
@@ -31,8 +31,7 @@
                       <span class="strong">{{event.price | currency:'JPY' }}</span>
                     </p>
                   </div>
-                  <p class="fst-italic">
-                    {{event.desc}}
+                  <p class="fst-italic" [innerHtml]="event.desc">
                   </p>
                   <ul>
                     <li *ngFor="let detail of event.eventDetails"><i class="bi bi-check-circled"></i>{{detail.item}}</li>

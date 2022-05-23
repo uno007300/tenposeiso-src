@@ -1,7 +1,7 @@
 
   <!-- ======= Menu Section ======= -->
   <section id="menu" class="menu section-bg">
-    <div class="container" data-aos="fade-up">
+    <div class="container">
 
       <div class="section-title">
         <h2>※価格については、お問い合わせにて、ご相談ください。</h2>
@@ -12,16 +12,20 @@
         <div class="col-lg-6" *ngFor="let priceCategory of priceCategories">
           <h2>{{priceCategory.title}}</h2>
           <table class="table">
-            <tr>
-              <th>項目</th>
-              <th>{{priceCategory.unit}}</th>
-              <th>価格</th>
-            </tr>
-            <tr *ngFor="let price of getPrice(priceCategory)">
-              <td>{{price.title}}</td>
-              <td>{{price.unitValue}}</td>
-              <td>{{price.price | currency:'JPY'}}~</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th class="unit">{{priceCategory.unit}}</th>
+                <th class="currency">価格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let price of getPrice(priceCategory)">
+                <td>{{price.title}}</td>
+                <td class="unit">{{price.unitValue}}</td>
+                <td class="currency">{{price.price | currency:'JPY'}}~</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -55,7 +59,7 @@
         </div>
       </div> -->
     </div>
-    <div class="container aos-init aos-animate price-warn price-alert">
+    <div class="container price-warn price-alert">
       <p>※作業金額1万円からの受注になります。</p>
       <p>※2点以上のご依頼でセット料金が適用されます。（税抜き合計金額から20％引き）</p>
       <p>※駐車料金は別途請求になります。</p>
