@@ -28,7 +28,7 @@
                     <p>
                       <span *ngIf="event.isCampaign" class="sale">{{event.sale | currency:'JPY' }}</span>
                       <span *ngIf="event.isCampaign"> -> </span>
-                      <span class="strong">{{event.price | currency:'JPY' }}</span>
+                      <span class="strong">{{event.isNeedContact ? '要相談' : event.price | currency:'JPY' }}</span>
                     </p>
                   </div>
                   <p class="fst-italic" [innerHtml]="event.desc">
