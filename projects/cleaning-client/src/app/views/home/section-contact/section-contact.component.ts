@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'projects/cleaning-client/src/environments/environment';
 import { ContactModel } from '../../../models/contact';
@@ -25,13 +25,13 @@ export class SectionContactComponent implements OnInit {
 
   displayMessage: { [key: string]: string } = {};
   errorMessage: string;
-  thisForm: FormGroup;
+  thisForm: UntypedFormGroup;
   private validationMessages: { [key: string]: { [key: string]: string } };
   private genericValidator: GenericValidator;
   contact: ContactModel;
   
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private contactService: ContactService,
     private gaService: GaService,
     private router: Router,
