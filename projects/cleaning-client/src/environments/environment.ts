@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   siteName: '店舗清掃.com',
-  companyName: 'メンテナンスNo1',
-  address: '〒162-0851 東京都新宿区',
+  companyName: '株式会社メンテナンスNo1',
+  address: '〒162-0851 東京都新宿区弁天町87-503',
   phone: '0120-993-163',
   email: 'info@tenposeiso.com',
   time: '月-土 09:00 AM - 18:00 PM',

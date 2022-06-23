@@ -39,11 +39,10 @@
               "projects/cleaning-client/src/assets/vendor/boxicons/css/boxicons.min.css",
               "projects/cleaning-client/src/assets/vendor/glightbox/css/glightbox.min.css",
               "projects/cleaning-client/src/assets/vendor/swiper/swiper-bundle.min.css",
-              "projects/cleaning-client/src/assets/css/style.css",
+              "projects/cleaning-client/src/assets/css/style.scss",
               "projects/cleaning-client/src/styles.scss"
             ],
             "scripts": [
-              "projects/cleaning-client/src/assets/vendor/aos/aos.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "projects/cleaning-client/src/assets/vendor/glightbox/js/glightbox.min.js",
               "projects/cleaning-client/src/assets/vendor/isotope-layout/isotope.pkgd.min.js",

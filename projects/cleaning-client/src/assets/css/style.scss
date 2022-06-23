@@ -489,9 +489,13 @@ a:hover {
 
 #hero .btns {
   margin-top: 30px;
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
-#hero .btn-menu, #hero .btn-book {
+#hero .btn-price, #hero .btn-menu, #hero .btn-book {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -506,13 +510,17 @@ a:hover {
   border: 2px solid #725522;
 }
 
-#hero .btn-menu:hover, #hero .btn-book:hover {
+#hero .btn-price:hover, #hero .btn-menu:hover, #hero .btn-book:hover {
   background: #cda45e;
   color: #fff;
 }
 
-#hero .btn-book {
+#hero .btn-menu, #hero .btn-book {
   margin-left: 15px;
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
 }
 
 #hero .play-btn {

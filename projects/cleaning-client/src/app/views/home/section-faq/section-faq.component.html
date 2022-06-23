@@ -16,7 +16,7 @@
 
             <div class="accordion accordion-flush px-xl-5" id="faqlist">
 
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200" *ngFor="let faq of faqs">
+              <div class="accordion-item" *ngFor="let faq of faqs">
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#' + faq.id">
                     <i class="bi bi-question-circle question-icon"></i>
