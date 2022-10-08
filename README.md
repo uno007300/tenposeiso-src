@@ -68,3 +68,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 -- メンテナンスNo1- done.
 
 -- 문의사항을 웹으로 받는 부분 (상민 기존서버로 담당) 화면에서 주문하면 사장님 메일로 직접 통보- done.
+
+@angular/cdk                       13.3.4 -> 14.0.2         ng update @angular/cdk --force
+@angular/cli                       13.2.6 -> 14.0.2         ng update @angular/cli --force
+@angular/core                      13.2.7 -> 14.0.3         ng update @angular/core --force
+@angular/material                  13.3.4 -> 14.0.2         ng update @angular/material --force

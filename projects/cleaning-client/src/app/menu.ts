@@ -41,8 +41,8 @@ export const prices: Price[] = [
   {id:'13', unitValue:'20㎡', category:'window', price:8000, title:'ガラス清掃(テープ跡あり)'},
 
   {id:'14', unitValue:'30分', category:'air', price:3500, title:'フィルター清掃'},
-  {id:'15', unitValue:'120分', category:'air', price:8500, title:'内部分解清掃(壁かけタイプ)'},
-  {id:'16', unitValue:'90分', category:'air', price:14580, title:'内部分解清掃(掃除機能付き)'},
+  {id:'15', unitValue:'90分', category:'air', price:8500, title:'内部分解清掃(壁かけタイプ)'},
+  {id:'16', unitValue:'120分', category:'air', price:14580, title:'内部分解清掃(掃除機能付き)'},
   {id:'17', unitValue:'150分', category:'air', price:18000, title:'内部分解清掃(業務用天かけタイプ)'},
   {id:'18', unitValue:'30分', category:'air', price:6000, title:'室外機'},
 

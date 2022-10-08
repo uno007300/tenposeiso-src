@@ -61,7 +61,7 @@ export const APP_ROUTES = [
 const routerOptions: ExtraOptions = {
   useHash: false,
   anchorScrolling: 'enabled',
-  initialNavigation: 'enabled',
+  initialNavigation: 'enabledBlocking',
   scrollPositionRestoration: 'enabled'
   // ...any other options you'd like to use
 };
