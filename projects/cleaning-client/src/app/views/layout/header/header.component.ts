@@ -4,6 +4,7 @@ import { environment } from 'projects/cleaning-client/src/environments/environme
 import { services, topNavis } from '../../../menu';
 import { LoadingService } from '../../../service/loading.service';
 import { MenuDialogComponent } from '../../dialog/menu-dialog/menu-dialog.component';
+import { PhoneDialogComponent } from '../../dialog/phone-dialog/phone-dialog.component';
 
 @Component({
   selector: 'app-header',
@@ -40,6 +41,16 @@ export class HeaderComponent implements OnInit {
       maxHeight: '90vh',
     });
     dialogRef.afterClosed().subscribe(() => {
+    });
+  }
+
+  call(){
+    const dialogRef = this.dialog.open(PhoneDialogComponent, {
+      width: '95%',
+      maxWidth: '400px'
+    });
+    dialogRef.afterClosed().subscribe(result => {
+     
     });
   }
 }

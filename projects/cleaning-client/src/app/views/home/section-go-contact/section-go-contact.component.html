@@ -2,7 +2,15 @@
 <section class="go-contact">
   <div class="container">
     <div class="contact-item-list">
-      <a [href]="'tel:' + phone" class="animated-button1">
+      <!-- <a [href]="'tel:' + phone" class="animated-button1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <img class="icon free-dial" src="https://fitsys2.blob.core.windows.net/seisopro/images/main/freedial.svg" alt="店舗清掃,厨房清掃">
+        {{phone}}
+      </a> -->
+      <a (click)="call()" class="animated-button1">
         <span></span>
         <span></span>
         <span></span>

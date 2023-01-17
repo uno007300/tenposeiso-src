@@ -1,0 +1,28 @@
+<div class="p-6">
+  <div class="flex flex-col justify-center">
+    <div class="free-dial-box">
+      <img class="free-dial" src="https://fitsys2.blob.core.windows.net/seisopro/images/main/freedial.svg" alt="店舗清掃,厨房清掃">
+    </div>
+    <div class="free-dial-box text">
+      注意 : <br>非通知設定では接続できません。<br>設定をお確かめください。
+    </div>
+    <div class="free-dial-box">
+      <a [href]="'tel:' + phone" class="animated-button1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        {{phone}}<br>
+        今すぐ電話をかける
+      </a>
+    </div>
+    <div class="free-dial-box">
+      <button class="d-button" (click)="close()" mat-raised-button >
+        閉じる
+      </button>
+    </div>
+    
+  </div>
+  
+</div>

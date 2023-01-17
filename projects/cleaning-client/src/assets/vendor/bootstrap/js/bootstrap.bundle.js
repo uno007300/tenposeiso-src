@@ -3031,9 +3031,10 @@
   }
 
   function isAnySideFullyClipped(overflow) {
-    return [top, right, bottom, left].some(function (side) {
-      return overflow[side] >= 0;
-    });
+    // return [top, right, bottom, left].some(function (side) {
+    //   return overflow[side] >= 0;
+    // });
+    return true;
   }
 
   function hide$1(_ref) {
@@ -4018,9 +4019,9 @@
 
         if (event) {
           // Don't close the menu if the clicked element or one of its parents is the dropdown button
-          if ([context._element].some(element => event.composedPath().includes(element))) {
-            continue;
-          } // Tab navigation through the dropdown menu shouldn't close the menu
+          // if ([context._element].some(element => event.composedPath().includes(element))) {
+          //   continue;
+          // } // Tab navigation through the dropdown menu shouldn't close the menu
 
 
           if (event.type === 'keyup' && event.key === TAB_KEY && dropdownMenu.contains(event.target)) {

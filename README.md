@@ -73,3 +73,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 @angular/cli                       13.2.6 -> 14.0.2         ng update @angular/cli --force
 @angular/core                      13.2.7 -> 14.0.3         ng update @angular/core --force
 @angular/material                  13.3.4 -> 14.0.2         ng update @angular/material --force
+
+ng add @nguniversal/express-engine --project 'cleaning-client'
