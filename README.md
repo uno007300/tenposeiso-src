@@ -37,38 +37,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 -- ng serve --open --project "cleaning-client" --configuration development
 
 
-
--- 오탈자 검토        -- 왕상훈사장님- done.
--- 화면 이미지 변경   -- 왕상훈사장님- done.
--- 도메인등록         -- 후보설정 / 사장님 결정- done.
--- 회사메일등록 ??    -- 하시게 되면 월 천엔정도- done.
--- 모바일 메뉴 대응- done.
--- 구글 분석등록       -- 유입분석- done.
--- 구글 검색등록        - done.
--- 구글 애드워드 등록  -- 광고 - done.
--- 프리다이얼 - done.
--- 메일주소 등록 - done.
--- 호스팅업체등록 - done.
-
-
--- 当サイトについて- done.
--- 個人情報保護- done.
-
--- 호스팅 년간 お支払合計 13,200円 (xserver) - done.
--- SSL 무료 (xserver 제공) - done.
--- 도메인 년간 1000엔 ~ 2000엔 (xserver)- done.
--- 메일주소 년간 2000엔 ~ 6000엔 (zoho)- done.
--- 광고 월  4,5000엔 google ad words. -done.
--- 실 경비 총 합계 
-
--- 사이트 제작 10만엔 ( 11 만엔 ) - 상민- done.
--- 관리비 월 3만엔  ( 3만 3천엔 ) - 상민- done.
-
-
--- メンテナンスNo1- done.
-
--- 문의사항을 웹으로 받는 부분 (상민 기존서버로 담당) 화면에서 주문하면 사장님 메일로 직접 통보- done.
-
 @angular/cdk                       13.3.4 -> 14.0.2         ng update @angular/cdk --force
 @angular/cli                       13.2.6 -> 14.0.2         ng update @angular/cli --force
 @angular/core                      13.2.7 -> 14.0.3         ng update @angular/core --force
